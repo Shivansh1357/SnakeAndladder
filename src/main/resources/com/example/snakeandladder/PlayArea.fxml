@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.PlayAreaController"
+            prefHeight="400.0" prefWidth="600.0">
+        <children>
+                <ImageView fitWidth="500" fitHeight="500" layoutX="300"  >
+                        <image>
+                                <Image url="@Board.jpg"/>
+                        </image>
+                </ImageView>
+
+                <ImageView fitWidth="20" fitHeight="50" layoutY="300"  layoutX="50" >
+                        <image>
+                                <Image url="@red.png"/>
+                        </image>
+                </ImageView>
+
+                <ImageView fitWidth="20" fitHeight="50" layoutY="400" layoutX="50"  >
+                        <image>
+                                <Image url="@blue.png"/>
+                        </image>
+                </ImageView>
+                <Text text="Player 1" layoutX="150" layoutY="300"></Text>
+                <Text text="Player 2" layoutX="150" layoutY="400"></Text>
+
+                <ImageView fitWidth="50" fitHeight="50" layoutY="150" layoutX="150" onMouseClicked="#roll" >
+                        <image>
+                                <Image url="@dice.png"/>
+                        </image>
+                </ImageView>
+
+                <Text fx:id="ChangeTurn" layoutY="100" layoutX="150" text="Player 1 turn"></Text>
+                <Text fx:id="number" layoutY="250" layoutX="170"></Text>
+
+                <ImageView fitWidth="20" fitHeight="50" layoutY="450"  layoutX="300" >
+                        <image>
+                                <Image url="@red.png"/>
+                        </image>
+                </ImageView>
+
+                <ImageView fitWidth="20" fitHeight="50" layoutY="450" layoutX="320"  >
+                        <image>
+                                <Image url="@blue.png"/>
+                        </image>
+                </ImageView>
+        </children>
+</AnchorPane>
